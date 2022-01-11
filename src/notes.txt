@@ -1,0 +1,2 @@
+- Component dapat dibuat dengan class, diwajibkan terdapat method render, karena disana kita akan menentukan susunan dari tampilan komponen.
+- State merupakan object special, karena memiliki method khusus (setState) untuk mengubah data di dalamnya. Yang mana setelah data pada state berubah, maka komponen tersebut akan render ulang.
