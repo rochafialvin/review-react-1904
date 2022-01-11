@@ -1,4 +1,10 @@
+import { useSelector } from "react-redux";
+
 export default function RecieverOne() {
+  const money = useSelector((state) => {
+    return state.lockerA.money;
+  });
+
   return (
     <div
       style={{
@@ -8,9 +14,11 @@ export default function RecieverOne() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        flexDirection: "column",
       }}
     >
       <h1>Reciever One</h1>
+      <h2>Amount of money : {money}</h2>
     </div>
   );
 }
